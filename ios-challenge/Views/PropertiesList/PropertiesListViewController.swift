@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PropertiesListViewController.swift
 //  ios-challenge
 //
 //  Created by Anina Dominguez on 31/3/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PropertiesListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
