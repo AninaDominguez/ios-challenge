@@ -3,8 +3,9 @@ build/
 DerivedData/
 
 # User configuration files
+xcuserdata/
+*.xcuserdatad/
 *.xcuserstate
-*.xcuserdata/
 *.xccheckout
 *.moved-aside
 
