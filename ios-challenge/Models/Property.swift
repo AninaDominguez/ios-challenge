@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct PropertyDTO: Decodable {
+struct Property: Codable {
     let propertyCode: String
     let thumbnail: String
     let floor: String?
     let price: Double
-    let priceInfo: PriceInfoDTO
+    let priceInfo: PriceInfo
     let propertyType: String
     let operation: String
     let size: Double
@@ -28,29 +28,29 @@ struct PropertyDTO: Decodable {
     let latitude: Double
     let longitude: Double
     let description: String
-    let multimedia: MultimediaDTO
-    let features: FeaturesDTO
+    let multimedia: Multimedia
+    let features: Features
 }
 
-struct PriceInfoDTO: Decodable {
-    let price: PriceDTO
+struct PriceInfo: Codable {
+    let price: Price
 }
 
-struct PriceDTO: Decodable {
+struct Price: Codable {
     let amount: Double
     let currencySuffix: String
 }
 
-struct MultimediaDTO: Decodable {
-    let images: [PropertyImageDTO]
+struct Multimedia: Codable {
+    let images: [PropertyImage]
 }
 
-struct PropertyImageDTO: Decodable {
+struct PropertyImage: Codable {
     let url: String
     let tag: String
 }
 
-struct FeaturesDTO: Decodable {
+struct Features: Codable {
     let hasAirConditioning: Bool?
     let hasBoxRoom: Bool?
 }

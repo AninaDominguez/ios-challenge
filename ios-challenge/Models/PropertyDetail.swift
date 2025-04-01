@@ -1,5 +1,5 @@
 //
-//  PropertyDetailDTO.swift
+//  PropertyDetail.swift
 //  ios-challenge
 //
 //  Created by Anina Dominguez on 1/4/25.
@@ -7,40 +7,40 @@
 
 import Foundation
 
-struct PropertyDetailDTO: Decodable {
+struct PropertyDetail: Codable {
     let adid: Int
     let price: Double
-    let priceInfo: PriceDTO
+    let priceInfo: Price
     let operation: String
     let propertyType: String
     let extendedPropertyType: String
     let homeType: String
     let state: String
-    let multimedia: MultimediaDetailDTO
+    let multimedia: MultimediaDetail
     let propertyComment: String
-    let ubication: UbicationDTO
+    let ubication: Ubication
     let country: String
-    let moreCharacteristics: CharacteristicsDTO
-    let energyCertification: EnergyCertificationDTO
+    let moreCharacteristics: Characteristics
+    let energyCertification: EnergyCertification
 }
 
-struct MultimediaDetailDTO: Decodable {
-    let images: [DetailImageDTO]
+struct MultimediaDetail: Codable {
+    let images: [DetailImage]
 }
 
-struct DetailImageDTO: Decodable {
+struct DetailImage: Codable {
     let url: String
     let tag: String
     let localizedName: String
     let multimediaId: Int
 }
 
-struct UbicationDTO: Decodable {
+struct Ubication: Codable {
     let latitude: Double
     let longitude: Double
 }
 
-struct CharacteristicsDTO: Decodable {
+struct Characteristics: Codable {
     let communityCosts: Double?
     let roomNumber: Int?
     let bathNumber: Int?
@@ -58,12 +58,12 @@ struct CharacteristicsDTO: Decodable {
     let status: String?
 }
 
-struct EnergyCertificationDTO: Decodable {
+struct EnergyCertification: Codable {
     let title: String
-    let energyConsumption: EnergyTypeDTO
-    let emissions: EnergyTypeDTO
+    let energyConsumption: EnergyType
+    let emissions: EnergyType
 }
 
-struct EnergyTypeDTO: Decodable {
+struct EnergyType: Codable {
     let type: String
 }
