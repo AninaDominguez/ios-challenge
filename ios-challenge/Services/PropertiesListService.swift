@@ -16,7 +16,7 @@ final class PropertiesListService: PropertiesListServiceProtocol {
     }
 
     func getPropertiesList(from url: URL) async throws -> [Property] {
-        let dtoList: [PropertyDTO] = try await networkManager.fetchData(url)
-        return dtoList.compactMap(Property.init)
+        let propertyList: [Property] = try await networkManager.fetchData(url)
+        return propertyList
     }
 }

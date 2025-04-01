@@ -16,7 +16,7 @@ final class PropertyDetailService: PropertyDetailServiceProtocol {
     }
 
     func getPropertyDetails(from url: URL) async throws -> PropertyDetail {
-        let dto: PropertyDetailDTO = try await networkManager.fetchData(url)
-        return PropertyDetail(dto: dto)
+        let detail: PropertyDetail = try await networkManager.fetchData(url)
+        return detail
     }
 }
