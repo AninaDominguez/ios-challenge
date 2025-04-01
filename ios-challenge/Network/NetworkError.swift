@@ -7,16 +7,13 @@
 
 import Foundation
 
-enum NetworkError: Error, LocalizedError {
+enum CustomError: Error, LocalizedError {
     case generic
-    case network
 
-    var errorDescription: String? {
+    var errorDescription: String {
         switch self {
         case .generic:
             return String(localized: "error_generic")
-        case .network:
-            return String(localized: "error_network")
         }
     }
 }
