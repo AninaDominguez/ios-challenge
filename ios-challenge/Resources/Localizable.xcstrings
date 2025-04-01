@@ -40,41 +40,58 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "h"
+            "value" : "Hello, World!"
           }
         }
       }
     },
-    "welcome_name" : {
+    "welcome_languages" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "¿Nos dices tu nombre?"
+            "value" : "Available languages"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "¿Nos dices tu nombre?"
+            "value" : "Idiomas disponibles"
           }
         }
       }
     },
-    "welcome_name_placeholder" : {
+    "welcome_select_list" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Anina Dominguez"
+            "value" : "Go to list view"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Anina Dominguez"
+            "value" : "Ir al listado de pisos"
+          }
+        }
+      }
+    },
+    "welcome_select_map" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go to map view"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver los pisos en el mapa"
           }
         }
       }
@@ -92,23 +109,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡BIENVENIDO!"
-          }
-        }
-      }
-    },
-    "welocome_select_language" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choose your language"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Selecciona tu idioma"
           }
         }
       }
