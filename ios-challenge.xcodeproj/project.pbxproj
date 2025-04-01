@@ -29,16 +29,15 @@
 				Resources/Images.xcassets,
 				Resources/JSON/detail.json,
 				Resources/JSON/list.json,
-				Views/PropertiesList/PropertiesListViewController.storyboard,
 				Views/PropertiesList/PropertiesListViewController.swift,
 				Views/PropertyDetail/PropertyDetailViewController.swift,
 			);
 			target = 2BEADEEF2D9B1350008909FB /* ios-challengeTests */;
 		};
-		2BEADF022D9B1350008909FB /* Exceptions for "ios-challenge" folder in "ios-challenge" target */ = {
+		2BFD37A72D9C66A000B6B08B /* Exceptions for "ios-challenge" folder in "ios-challenge" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Resources/Info.plist,
+				Info.plist,
 			);
 			target = 2BEADED92D9B134F008909FB /* ios-challenge */;
 		};
@@ -48,7 +47,7 @@
 		2BEADEDC2D9B134F008909FB /* ios-challenge */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				2BEADF022D9B1350008909FB /* Exceptions for "ios-challenge" folder in "ios-challenge" target */,
+				2BFD37A72D9C66A000B6B08B /* Exceptions for "ios-challenge" folder in "ios-challenge" target */,
 				2B9DC9062D9B2B2E0084BF68 /* Exceptions for "ios-challenge" folder in "ios-challengeTests" target */,
 			);
 			path = "ios-challenge";
@@ -238,7 +237,7 @@
 				INFOPLIST_FILE = "ios-challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -269,7 +268,7 @@
 				INFOPLIST_FILE = "ios-challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
