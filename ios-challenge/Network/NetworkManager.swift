@@ -7,7 +7,11 @@
 
 import Foundation
 
-final class NetworkManager {
+protocol NetworkManagingProtocol {
+    func fetchData<T: Decodable>(_ url: URL) async throws -> T
+}
+
+final class NetworkManager: NetworkManagingProtocol {
     
     func fetchData<T: Decodable>(_ url: URL) async throws -> T {
         do {
