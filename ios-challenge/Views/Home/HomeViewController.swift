@@ -11,11 +11,9 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var listButton: UIButton!
-    @IBOutlet weak var mapButton: UIButton!
     @IBOutlet weak var languageButton: UIButton!
     
     var onGoToList: (() -> Void)?
-    var onGoToMap: (() -> Void)?
     
     private var availableLanguages: [String] = []
     private var selectedLanguageCode: String?
@@ -36,10 +34,9 @@ class HomeViewController: UIViewController {
     }
     
     private func setUpLabelsAnButtons() {
-        languageButton.layer.cornerRadius = 15
+        languageButton.layer.cornerRadius = 20
         titleLabel.text = String(localized: "welcome_title")
         listButton.setTitle(String(localized: "welcome_select_list"), for: .normal)
-        mapButton.setTitle(String(localized: "welcome_select_map"), for: .normal)
     }
     
     private func setupLanguages() {
@@ -69,9 +66,5 @@ class HomeViewController: UIViewController {
     
     @IBAction func didTapListButton(_ sender: UIButton) {
         onGoToList?()
-    }
-    
-    @IBAction func didTapMapButton(_ sender: UIButton) {
-        onGoToMap?()
     }
 }
