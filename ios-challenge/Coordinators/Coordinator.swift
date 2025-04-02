@@ -7,9 +7,17 @@
 
 import UIKit
 
-public protocol Coordinator {
+protocol Coordinator {
     var childCoordinators: [Coordinator] { get set }
     var navigationController: UINavigationController { get set }
     
     func start()
+}
+
+protocol HomeViewControllerDelegate {
+    func showList()
+}
+
+protocol PropertiesListViewControllerDelegate {
+    func showDetail(propertyCode: String, sender: UIViewController)
 }
