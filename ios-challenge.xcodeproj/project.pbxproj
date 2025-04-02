@@ -29,6 +29,7 @@
 				Resources/Images.xcassets,
 				Resources/JSON/detail.json,
 				Resources/JSON/list.json,
+				ViewModels/Detail/PropertyDetailViewModel.swift,
 			);
 			target = 2BEADEEF2D9B1350008909FB /* ios-challengeTests */;
 		};

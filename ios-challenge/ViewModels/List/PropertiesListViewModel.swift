@@ -23,7 +23,7 @@ final class PropertiesListViewModel: PropertiesListViewModelProtocol {
     private let listService: PropertiesListServiceProtocol
     private let dataStorage: StorageManagingProtocol
     private let imageStorage: ImageStorageManagingProtocol
-    private let favoritesManager: FavoritesManagerProtocol
+    private let favoritesManager: FavoritesManagingProtocol
     private let storageName = "cached_properties"
     private(set) var images: [String: UIImage] = [:]
     private(set) var favoriteCodes: [String: Date] = [:]
@@ -33,7 +33,7 @@ final class PropertiesListViewModel: PropertiesListViewModelProtocol {
     init(listService: PropertiesListServiceProtocol = PropertiesListService(),
          dataStorage: StorageManagingProtocol = StorageManager(),
          imageStorage: ImageStorageManagingProtocol = ImageStorageManager(),
-         favoritesManager: FavoritesManagerProtocol = FavoritesManager()) {
+         favoritesManager: FavoritesManagingProtocol = FavoritesManager()) {
         self.listService = listService
         self.dataStorage = dataStorage
         self.imageStorage = imageStorage
