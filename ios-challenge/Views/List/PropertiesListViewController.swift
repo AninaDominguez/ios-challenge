@@ -19,7 +19,7 @@ class PropertiesListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var viewModel: PropertiesListViewModelProtocol?
+    var viewModel: PropertiesListViewModelProtocol?
     var delegate: PropertiesListViewControllerDelegate?
     private var properties: [Property] = []
     private let refreshControl = UIRefreshControl()
@@ -93,7 +93,7 @@ extension PropertiesListViewController: ViewProtocol {
         }
     }
     
-    @objc private func didPullToRefresh() {
+    @objc func didPullToRefresh() {
         loadProperties()
         DispatchQueue.main.async {
             self.refreshControl.endRefreshing()
