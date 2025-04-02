@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CustomError: Error, LocalizedError {
+enum NetworkError: Error, LocalizedError {
     case generic
 
     var errorDescription: String {

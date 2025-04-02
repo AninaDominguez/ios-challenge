@@ -27,9 +27,6 @@ final class PropertyDetailViewModel: ObservableObject, PropertyDetailViewModelPr
     @Published var images: [UIImage] = []
     @Published var detail: PropertyDetail?
     
-    weak var delegate: BaseProtocol?
-
-    
     // MARK: - Init
     init(detailService: PropertyDetailServiceProtocol = PropertyDetailService(),
          dataStorage: StorageManagingProtocol = StorageManager(),
@@ -48,7 +45,7 @@ final class PropertyDetailViewModel: ObservableObject, PropertyDetailViewModelPr
         do {
             guard let url = Bundle.main.url(forResource: "detail", withExtension: "json") else {
                 await MainActor.run {
-                    self.errorMessage = CustomError.generic.errorDescription
+                    self.errorMessage = NetworkError.generic.errorDescription
                 }
                 return
             }

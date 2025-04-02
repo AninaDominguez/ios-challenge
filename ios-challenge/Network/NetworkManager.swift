@@ -19,7 +19,7 @@ final class NetworkManager: NetworkManagingProtocol {
             
             return try JSONDecoder().decode(T.self, from: data)
         } catch {
-            throw CustomError.generic
+            throw NetworkError.generic
         }
     }
 }
