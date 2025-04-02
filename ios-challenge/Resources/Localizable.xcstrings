@@ -1,6 +1,25 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld %2$@"
+          }
+        }
+      }
+    },
+    "📐 Superficie: %lld m²" : {
+
+    },
+    "🛁 Baños: %lld" : {
+
+    },
+    "🛏️ Habitaciones: %lld" : {
+
+    },
     "error_generic" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -35,12 +54,56 @@
         }
       }
     },
-    "Hello, World!" : {
+    "OK" : {
+
+    },
+    "property_for_rent" : {
+      "extractionState" : "manual",
       "localizations" : {
-        "es" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hello, World!"
+            "value" : "For rent:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "En alquiler:"
+          }
+        }
+      }
+    },
+    "property_for_sale" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For sale:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "A la venta:"
+          }
+        }
+      }
+    },
+    "property_not_available" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There is no further information about this property."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "No hay más información de esta propiedad."
           }
         }
       }
@@ -75,23 +138,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ir al listado de pisos"
-          }
-        }
-      }
-    },
-    "welcome_select_map" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Go to map view"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ver los pisos en el mapa"
           }
         }
       }
