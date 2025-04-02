@@ -28,7 +28,7 @@ final class PropertyCellView: UITableViewCell {
         contentView.backgroundColor = .background
         cardView.layer.cornerRadius = 12
         cardView.layer.borderWidth = 1
-        cardView.layer.borderColor = UIColor.background.cgColor
+        cardView.layer.borderColor = UIColor.border.cgColor
 
         propertyImageView.clipsToBounds = true
         propertyImageView.layer.cornerRadius = 12

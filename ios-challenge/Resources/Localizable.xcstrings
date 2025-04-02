@@ -11,14 +11,37 @@
         }
       }
     },
-    "📐 Superficie: %lld m²" : {
-
+    "area" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Area"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Superficie"
+          }
+        }
+      }
     },
-    "🛁 Baños: %lld" : {
-
-    },
-    "🛏️ Habitaciones: %lld" : {
-
+    "baths" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baths"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baños"
+          }
+        }
+      }
     },
     "error_generic" : {
       "extractionState" : "manual",
@@ -54,8 +77,38 @@
         }
       }
     },
+    "flat" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flat"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Piso"
+          }
+        }
+      }
+    },
     "OK" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
     },
     "property_for_rent" : {
       "extractionState" : "manual",
@@ -68,7 +121,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "En alquiler:"
           }
         }
@@ -85,7 +138,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "A la venta:"
           }
         }
@@ -102,8 +155,24 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "No hay más información de esta propiedad."
+          }
+        }
+      }
+    },
+    "rooms" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rooms"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Habitaciones"
           }
         }
       }

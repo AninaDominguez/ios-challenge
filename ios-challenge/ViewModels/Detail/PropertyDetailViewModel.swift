@@ -75,6 +75,9 @@ final class PropertyDetailViewModel: ObservableObject, PropertyDetailViewModelPr
         }
     }
     
+    func getPropertyType(_ type: String) -> String {
+        return String(localized: "flat")
+    }
     
     // MARK: - Images storage
     private func saveImagesToStorage(_ property: PropertyDetail) async {

@@ -29,24 +29,30 @@ struct PropertyDetailView: View {
                     if let detail = viewModel.detail {
                         // MARK: - Details info
                         VStack(alignment: .leading, spacing: 15) {
-                            Text(detail.extendedPropertyType)
-                                .font(.title)
-                                .fontWeight(.bold)
-                            
-                            Text("\(Int(detail.priceInfo.amount)) \(detail.priceInfo.currencySuffix)")
-                                .font(.title2)
-                                .foregroundColor(.blue)
+                            HStack(alignment: .bottom) {
+                                Text(viewModel.getPropertyType(detail.extendedPropertyType))
+                                    .font(.title)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.primaryTextColor)
+                                
+                                Spacer()
+                                
+                                Text("\(Int(detail.priceInfo.amount)) \(detail.priceInfo.currencySuffix)")
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.detailsColor)
+                            }
                             
                             if let rooms = detail.moreCharacteristics.roomNumber {
-                                Text("🛏️ Habitaciones: \(rooms)")
+                                Text("🛏️ " + String(localized: "rooms") + ": \(rooms)")
                             }
                             
                             if let baths = detail.moreCharacteristics.bathNumber {
-                                Text("🛁 Baños: \(baths)")
+                                Text("🛁 " + String(localized: "baths") + ": \(baths)")
                             }
                             
                             if let size = detail.moreCharacteristics.constructedArea {
-                                Text("📐 Superficie: \(size) m²")
+                                Text("📐 " + String(localized: "area") + ": \(size) m²")
                             }
                             
                             Text(detail.propertyComment)
@@ -123,10 +129,14 @@ struct PropertyMapView: View {
             )),
             annotationItems: [Location(coordinate: coordinate)]
         ) { place in
-            MapMarker(coordinate: place.coordinate, tint: .buttonBackgroundColor)
+            MapMarker(coordinate: place.coordinate, tint: .detailsColor)
         }
         .frame(height: 250)
         .cornerRadius(12)
+        .overlay(
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(Color.borderColor, lineWidth: 1)
+        )
         .padding(.horizontal)
     }
 }
