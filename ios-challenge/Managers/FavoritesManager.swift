@@ -7,14 +7,14 @@
 
 import Foundation
 
-protocol FavoritesManagerProtocol {
+protocol FavoritesManagingProtocol {
     func add(propertyCode: String) async
     func remove(propertyCode: String) async
     func isFavorite(propertyCode: String) async -> Date?
     func getFavorites() async -> [FavoriteProperty]
 }
 
-actor FavoritesManager: FavoritesManagerProtocol {
+actor FavoritesManager: FavoritesManagingProtocol {
     private let filename = "favorite_properties"
     private let storageManager = StorageManager()
 
