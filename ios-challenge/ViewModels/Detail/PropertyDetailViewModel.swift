@@ -80,7 +80,7 @@ final class PropertyDetailViewModel: ObservableObject, PropertyDetailViewModelPr
     private func saveImagesToStorage(_ property: PropertyDetail) async {
         let imageUrls = property.multimedia.images.map { $0.url }
         let loaded = await imageStorage.loadImages(from: imageUrls)
-        DispatchQueue.main.async {
+        await MainActor.run {
             self.images = loaded
         }
     }
