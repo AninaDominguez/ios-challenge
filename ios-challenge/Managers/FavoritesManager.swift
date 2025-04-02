@@ -16,7 +16,11 @@ protocol FavoritesManagingProtocol {
 
 actor FavoritesManager: FavoritesManagingProtocol {
     private let filename = "favorite_properties"
-    private let storageManager = StorageManager()
+    private let storageManager: StorageManagingProtocol
+
+    init(storageManager: StorageManagingProtocol = StorageManager()) {
+        self.storageManager = storageManager
+    }
 
     func add(propertyCode: String) async {
         var favorites = await getFavorites()
